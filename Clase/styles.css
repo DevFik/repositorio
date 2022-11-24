@@ -32,12 +32,11 @@ body {
 }
 
 .contenedor .header {
-    background-color: rgb(38, 16, 88);
+    background-image: linear-gradient(to left , rgb(54, 15, 54) , rgb(165, 12, 38));
     color: white;
     text-align: center;
     grid-column-start: 1;
     grid-column-end: -1;
-    transform: scale(2,1);
 }
 
 .contenedor .contenido {
@@ -81,6 +80,12 @@ body {
     grid-column: 1 / -1;
     grid-column: span -1;
     grid-row: 3;
+}
+
+.contenedor .gradiante{
+    background-image: linear-gradient(to left , rgb(54, 15, 54) , rgb(165, 12, 38));
+    color: white;
+    text-align: center;
 }
 
 @media screen and (max-width: 786px) {
