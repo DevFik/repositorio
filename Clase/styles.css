@@ -32,11 +32,12 @@ body {
 }
 
 .contenedor .header {
-    background-image: linear-gradient(to right,rgb(30, 8, 71) , rgb(85, 27, 85));
+    background-color: rgb(38, 16, 88);
     color: white;
     text-align: center;
     grid-column-start: 1;
     grid-column-end: -1;
+    transform: scale(2,1);
 }
 
 .contenedor .contenido {
