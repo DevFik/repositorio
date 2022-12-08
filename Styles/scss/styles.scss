@@ -18,20 +18,13 @@ body {
     grid-template-rows: repeat(5 , auto);
 }
 
-.contenedor > div,
-.contenedor .header,
-.contenedor .menu,
-.contenedor .links,
-.contenedor .gif,
-.contenedor .sidebar,
-.contenedor .form,
-.contenedor .sidebarC {
+.contenedor > div {
     background-color: rgb(241, 235, 235);
     padding: 10px;
     border-radius: 2px;
-}
 
-.contenedor .header {
+
+header {
     background-image: linear-gradient(to left , rgb(54, 15, 54) , rgb(165, 12, 38));
     color: white;
     text-align: center;
@@ -39,15 +32,16 @@ body {
     grid-column-end: -1;
 }
 
-.contenedor .contenido {
+.contenido {
     grid-column:span 3;
+    grid-row-start: 2;
 }
 
-.contenedor .gif {
+.gif {
     grid-column: 1 / 2;  
 }
 
-.contenedor .sidebarC {
+.sidebarC {
     background-color: rgb(219, 142, 97);
     min-height: 100px;
     grid-column: 1 / -1;
@@ -57,7 +51,7 @@ body {
     justify-content: center;
 }
 
-.contenedor .sidebar {
+aside {
     grid-column:  4;
     grid-row: 2 / 4;
     background-color: rgb(219, 142, 97);
@@ -68,7 +62,7 @@ body {
     justify-content: center;
 }
 
-.contenedor .links {
+.links {
     grid-column: 1 / -1;
     display: flex;
     align-items: center;
@@ -76,16 +70,23 @@ body {
     background: rgb(240, 205, 160);
 }
 
-.contenedor .form {
+contenido-N {
+    grid-column:span 3;
+    grid-row-start: 3;
+  }
+
+form {
     grid-column: 1 / -1;
     grid-column: span -1;
     grid-row: 3;
 }
 
-.contenedor .gradiante{
+.gradiante{
     background-image: linear-gradient(to left , rgb(54, 15, 54) , rgb(165, 12, 38));
     color: white;
     text-align: center;
+}
+
 }
 
 @media screen and (max-width: 786px) {
