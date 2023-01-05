@@ -91,6 +91,15 @@ div,
     color: white;
     text-align: center;
   }
+  .redes {
+    li {
+      color: white;
+      font-size: 20px;
+      margin: 15px 0px;
+    }
+  }
+
+  $redes: (facebook blue, twitter lightblue, youtube red )
 }
 
 @media screen and (max-width: 786px) {
