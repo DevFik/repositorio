@@ -14,32 +14,20 @@ body {
     margin: 5px auto;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(4 , 1fr);
-    grid-template-rows: repeat(5 , auto);
+    grid-template-columns: 5;
+    grid-template-rows: 3;
 
-div,
-.header,
-.menu,
-.links,
-.gif,
-.sidebar,
-.form,
-.sidebarC {
-    background-color: rgb(241, 235, 235);
+ div,
+ .header,
+ .menu,
+ .links,
+ .gif,
+ .sidebar,
+ .form,
+ .sidebarC {
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 2px;
-  }
-
-  .header {
-    background-image: linear-gradient(to left , rgb(54, 15, 54) , rgb(165, 12, 38));
-    color: white;
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: -1;
-  }
-
-  .contenido {
-    grid-column:span 3;
   }
 
   .contenido-N {
@@ -100,6 +88,7 @@ div,
   }
 
   $redes: (facebook blue, twitter lightblue, youtube red )
+
 }
 
 @media screen and (max-width: 786px) {
@@ -108,6 +97,6 @@ div,
     }
     .contenedor .sidebar {
         grid-column: 1 / -1;
-        grid-row: 4 / -1;
+        grid-row: 3 / -1;
     }
 }
