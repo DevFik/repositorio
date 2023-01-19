@@ -4,63 +4,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ProjectCoder</title>
-    <title>Emprendimiento, Promagacion Web, Venta de juegos, Playstation, PS3, PS4</title>
+    <title>Inicio - LaArgentinisima</title>
+    <title>Emprendimiento, Promagacion Web, Argentina, articulos de argentina, celeste y blanco </title>
     <meta name="description" content="Promagacion de pagina web">
-    <meta name="keywords" content="HTML, CSS, SCSS, Juegos de play">
-    <link rel="shortcut icon" href="Styles/imgs/download.png">
+    <meta name="keywords" content="HTML, CSS, SCSS, laArgentinisima">
+    <link rel="shortcut icon" href="Styles/imgs/Logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="Styles/css/styles.css">
-
+    <link rel="stylesheet" href="Styles/scss/styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
 </head>
-<body>>
-    
-    <div class="contenedor">
-        <header class="header">
-                <h1>Emprendimiento "X"</h1>
-            <hr/>
-            <nav class="menu">
-                <article class="links">
-                <a href="html/nosotros.html">Nosotros</a> 
-                <a href="html/contacto.html">Contacto</a>
-                <a href="html/productos.html">Productos <span class="badge bg-secondary">New</span></a>
-                <a href="html/direccion.html">Dirección</a>
-                </article>
-            </nav>
-        </header>
-        <aside class="sidebar">
-            <h3>Anuncio o publicidad</h3>
-        </aside>
-        <div class="contenido">
-            <h2>Bienvenidos a mi pagina web</h2>
-            
-            <br>
-            
-            <h3>Que buscas?</h3>
-            <ol>
-                <li>Si lo que estas buscando es videojuegos para matar las horas de ese aburrido sabado a las 3 de la tarde, dejame decirte que estas en el lugar correcto. Podras encontrar el catalogo de juegos en la pestaña de "productos"</li>
-                <li>Si lo que quieres es adquirir productos en fisico o saber de donde partiran los productos que pidas online, dirigete a la pestaña de "dirección".</li> 
-                <li>Conocer nuestra historia visita la pestaña "nosotros" y si tenes alguna consulta contactanos en la pesataña "contacto" </li>
-            </ol>
-            <br/>
+<body>
+  <div class="top-bar">
+    <span><ion-icon name="alarm-outline"></ion-icon> Horarios: Lunes a Viernes de 7 a 17hrs</span>
+    <ul>
+        <li><a href="https://www.instagram.com/la_argentinisima/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+    </ul>
+  </div>
 
-        </div> 
-        <div class="gif"> 
-                <img src="https://ugc.kn3.net/i/origin/https://cdn-images-1.medium.com/max/1600/1*IRFhWNqusUWbTsB1hQXhrQ.gif" height="340" alt="promacion.gif"/>
-                <br/>
-                <label class="texto">*haciendo la pagina*</label>
-        </div>
-        <div class="gradiante">
-            <p>Texto Gradiente de prueba</p>
-        </div>
-        <ul class="redes">
-            <li>facebook</li>
-            <li>twitter</li>
-            <li>youtube</li>
-        </ul>
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="Styles/imgs/Logo.png" alt="logo">  LaArgentinisima</a>
     </div>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>       
+    <div class="toggle">
+      <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+    </div>
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="html/nosotros.html">Nosotros</a></li>
+      <li><a href="html/productos.html">Productos</a></li>
+      <li><a href="html/blog.html">Blog</a></li>
+      <li><a href="html/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<script>
+ $(function(){
+  $(".toggle").on("click", function(){
+    if($(".menu").hasClass("active")){
+      $(".menu").removeClass("active");
+      $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+    } else{
+      $(".menu").addClass("active");
+      $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+    }
+  });
+ });
+ </script>
+
+ <br>
+
+<div class="pie">
+  <img src="./Styles/imgs/Logo.png" alt="logoResponsive" class="responsive">
+  <div class="imagenes">
+
+    <img src="Styles/imgs/Logo.png" width="300px" alt="Logo">
+
+  </div>
+</div>
+
+<section class="recomendaciones">
+  <div class="section-header">
+    <h2>Recomendados</h2>
+    <a href="/html/productos.html">Ver mas</a>
+  </div>
+  <div class="productos">
+    <div class="p1">
+      <img src="/Styles/imgs/Producto1.jpg" class="img-thumbnail" alt="...">
+      <p>remera argentina</p>
+    </div>
+    <div class="p2">
+      <img src="/Styles/imgs/Producto2.jpg" class="img-thumbnail" alt="...">
+      <p>Pelota de Futbol</p>
+    </div>
+    <div class="p3">
+      <img src="/Styles/imgs/Producto3.jpg" class="img-thumbnail" alt="...">
+      <p>Remeras AFA de arbitro</p>
+    </div>
+    <div class="p4">
+      <img src="/Styles/imgs/Producto4.jpg" class="img-thumbnail" alt="...">
+      <p>Llveros de Argentina</p>
+    </div>
+    <div class="p5">
+      <img src="/Styles/imgs/Producto5.jpg" class="img-thumbnail" alt="...">
+      <p>Cuadro de Maradona</p>
+    </div>
+  </div>
+</section>
+
+<section class="losCupones">
+  <div class="C-1">
+    <h2>Cupones</h2>
+    <a href="#">Ver Mas</a>
+  </div>
+  <div class="Cupon">
+  <div class="section-header">
+    <h4><strong>¡Te tenemos un CUPON!</strong></h4>
+    <h2><strong>¡¡solo para vos!!</strong></h2>
+  </div>
+  <hr style="color: #000000;">
+  <div class="form">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Tu Gmail</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre@ejemplo.com">
+    </div>
+  </div>
+  <div class="cupo1">
+    <img src="./Styles/imgs/cupon.png" alt="cupon">
+  </div>
+  </div>
+</section>
+
+<section class="ofertas">
+  <div class="section-header">
+    <h2>Ofertas del mes</h2>
+    <a href="./html/ofertas.html">Ver Ofertas</a>
+  </div>
+    <div class="oferta1">
+      <span class="advice" style="font-size: 18px;" >Descuentos en Camisetas</span>
+      <br>
+      <span class="advice2" style="font-size: 25px;">de hasta un 40%</span>
+      <img src="./Styles/imgs/articulo1.jpg" style="margin-left: 130px;" alt="articulo1">
+    </div>
+    <div class="oferta2">
+      <span class="advice" style="font-size: 18px;" >Descuentos en articulos</span>
+      <br>
+      <span class="advice2" style="font-size: 25px;">en un 20% para ti</span>
+      <img src="./Styles/imgs/articulo2.jpg" style="margin-left: 130px;" alt="articulo2">
+    </div>
+  </section>
+
+<footer class="footer">
+<div class="info-slider">
+  <div class="img-container">
+    <img src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/ecosystem/payment.svg" alt="como pagar">
+  </div>
+  <h5 style="color: aliceblue;">Elejí cómo pagar</h5>
+  <p style="color: aliceblue;">Podes pagar con efectivo o con targeta</p>
+</div>
+<div class="info-slider2">
+  <div class="img-container">
+    <img src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/ecosystem/protected.svg" alt="seguridad">
+  </div>
+  <h5 style="color: aliceblue;">Seguridad asegurada</h5>
+  <p style="color: aliceblue;">podes confiar en la seguridad que te brindamos <br>
+     al momento de realizar tu compra</p>
+</div>
+
+<p style="color: aliceblue;"><ion-icon name="logo-whatsapp"></ion-icon>011 2222 3333</p>
+
+<h4 style="color: aliceblue;"><ion-icon name="mail-outline"></ion-icon>oficialargentinisima@gmail.com</h4>
+
+</footer>
 </body>
 
 </html>
